@@ -193,7 +193,7 @@ export default function Hero() {
         <div ref={bgRef} className="absolute -inset-8">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://picsum.photos/seed/portfolio-hero/1920/1080"
+            src="/images/hero.jpeg"
             alt=""
             className="h-full w-full object-cover opacity-60"
           />
@@ -234,7 +234,7 @@ export default function Hero() {
       <CursorSparkles containerRef={root} />
       <div ref={contentRef} className="relative z-10 -mt-10 sm:-mt-30">
         <p className="hero-sub mb-4 font-mono text-sm uppercase tracking-[0.2em] text-muted">
-          Frontend Developer — Motion & Interaction
+          Full Stack Developer — Motion & Interaction
         </p>
         <h1 className="font-display max-w-4xl text-[clamp(2.25rem,6vw,80px)] font-extrabold leading-[0.95] tracking-tight">
           <span className="block overflow-hidden">
@@ -259,8 +259,10 @@ export default function Hero() {
             </span>
           </a>
           <p className="max-w-sm text-base text-muted">
-            React &amp; TypeScript developer crafting expressive, performant
-            motion with GSAP and Framer Motion.{" "}
+            Full stack developer building end-to-end web apps — React &amp;
+            TypeScript interfaces with expressive, performant motion (GSAP,
+            Framer Motion), backed by the APIs and infrastructure behind
+            them.{" "}
             <a href="#contact" className="font-semibold text-foreground underline-offset-4 hover:underline">
               Get in touch
             </a>

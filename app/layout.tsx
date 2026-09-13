@@ -14,8 +14,8 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Frontend & Motion Developer",
-  description: "Portfolio showcasing animated, motion-driven frontend work.",
+  title: "Rama Bhattarai — Full Stack Developer",
+  description: "Portfolio showcasing animated, motion-driven full stack development work.",
 };
 
 export default function RootLayout({

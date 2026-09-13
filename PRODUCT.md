@@ -6,11 +6,11 @@ brand
 
 ## Users
 
-Recruiters, hiring managers, and prospective freelance/contract clients evaluating a frontend/motion developer's real-world work. They skim fast, so craft has to read instantly in the first few seconds of scroll.
+Recruiters, hiring managers, and prospective freelance/contract clients evaluating a full stack/motion developer's real-world work. They skim fast, so craft has to read instantly in the first few seconds of scroll.
 
 ## Product Purpose
 
-A personal portfolio for a frontend & motion developer. Its job is to prove technical and design craft through the site itself (motion, interaction detail, polish) as much as through the project descriptions — the medium is the pitch. Success = a visitor remembers the site and reaches out.
+A personal portfolio for a full stack developer with a motion/frontend specialty. Its job is to prove technical and design craft through the site itself (motion, interaction detail, polish) as much as through the project descriptions — the medium is the pitch. Success = a visitor remembers the site and reaches out.
 
 ## Brand Personality
 

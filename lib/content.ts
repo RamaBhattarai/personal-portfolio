@@ -1,11 +1,15 @@
 export const skills = [
   "React",
   "TypeScript",
+  "Next.js",
+  "Node.js",
+  "Express",
   "GSAP",
   "Framer Motion",
-  "Next.js",
+  "PostgreSQL",
+  "MySQL",
+  "Docker",
   "Three.js",
-  "CSS Animation",
   "REST APIs",
 ];
 

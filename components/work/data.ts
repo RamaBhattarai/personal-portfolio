@@ -11,18 +11,48 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "lms-platform",
+    title: "Gitgi Foundation — LMS Platform",
+    shortTitle: "LMS Platform",
+    description:
+      "A multi-service learning platform (in progress) with independently deployable learning and real-time communication services, shared JWT auth with refresh-token rotation, and an AI-powered multilingual learning assistant.",
+    tags: ["Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "Prisma", "Redis", "Socket.IO", "MinIO"],
+    highlights: [
+      "Multi-Service Architecture With Independent Databases",
+      "Real-Time Chat, Presence & Threaded Q&A via Socket.IO",
+      "AI-Powered, Multilingual Learning Assistant",
+    ],
+    image: "/images/lms.jpeg",
+    href: "#",
+  },
+  {
+    id: "hr-ats-platform",
+    title: "HR & Applicant Tracking Platform",
+    shortTitle: "HR & ATS",
+    description:
+      "An integrated HR and applicant tracking platform covering job postings, candidate applications, interview scheduling, hiring workflows, employee management, leave, payroll, and performance.",
+    tags: ["React", "TypeScript", "TanStack Query", "Tailwind CSS", "Storybook", "Node.js", "Express", "PostgreSQL", "Prisma"],
+    highlights: [
+      "Multi-Role Recruitment & HR Dashboards",
+      "Timezone-Aware Interview Scheduling With Calendar Sync",
+      "JWT, OAuth 2.0, RBAC & Real-Time Notifications",
+    ],
+    image: "/images/ats.jpeg",
+    href: "#",
+  },
+  {
     id: "bs-realty-platform",
     title: "BS Realty — Real Estate Platform",
     shortTitle: "BS Realty",
     description:
-      "A full-scale admin dashboard and public website, built with modern Next.js rendering strategies (SSR, SSG, ISR) and full on-page SEO optimization.",
-    tags: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "React Query"],
+      "A full-stack real estate platform built from the ground up — public website, admin dashboard, and role-based agent portals — using modern Next.js rendering strategies for performance and SEO.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "TanStack Query", "Zustand", "Node.js", "Express", "Prisma", "MySQL"],
     highlights: [
-      "Full Admin Dashboard + Website Built From Scratch",
-      "Server Components for Faster Load Times",
-      "Real-Time Updates via Socket.io",
+      "Admin Dashboard + Public Website Built From Scratch",
+      "Server Components, SSR/SSG/ISR for Faster Load Times",
+      "Concurrency-Safe Appointment Scheduling",
     ],
-    image: "https://picsum.photos/seed/bs-realty-platform/1200/900",
+    image: "/images/realestate.jpeg",
     href: "#",
   },
   {
@@ -30,74 +60,29 @@ export const projects: Project[] = [
     title: "BS Realty — Insurance Portal",
     shortTitle: "Insurance Portal",
     description:
-      "A production-grade insurance portal with role-based dashboards for agents and admins, real-time notifications via Socket.IO, and interactive mapping with Leaflet.",
-    tags: ["React 19", "TypeScript", "Zustand", "React Query", "Tailwind CSS", "Docker"],
+      "A production-grade insurance portal with role-based dashboards for agents and admins, real-time notifications, and interactive mapping, sharing centralized SSO/IAM with the real estate platform.",
+    tags: ["React", "TypeScript", "Zustand", "TanStack Query", "Tailwind CSS", "Node.js", "Prisma", "Socket.IO"],
     highlights: [
       "Multi-Step Quote Wizard",
-      "Role-Based Access Control",
-      "Real-Time Notifications + Live Mapping",
+      "Role-Based Dashboards + Centralized SSO/IAM",
+      "Real-Time Notifications + Live Mapping (Leaflet)",
     ],
-    image: "https://picsum.photos/seed/bs-realty-insurance/1200/900",
-    href: "#",
-  },
-  {
-    id: "job-portal-ats",
-    title: "Job Portal — Applicant Tracking System",
-    shortTitle: "Job Portal ATS",
-    description:
-      "A full-scale ATS supporting multi-role hiring workflows, with a custom CI/CD pipeline (SonarQube scan → Docker build → push → SSH deploy) and containerized, zero-downtime deployments.",
-    tags: ["React 19", "TypeScript", "TanStack Query v5", "Vitest", "Docker", "Drone CI/CD", "Nginx"],
-    highlights: [
-      "Multi-Role Hiring Workflows",
-      "Timezone-Aware Interview Scheduling",
-      "4-Stage Zero-Downtime CI/CD Pipeline",
-    ],
-    image: "https://picsum.photos/seed/job-portal-ats/1200/900",
+    image: "/images/insurance.jpeg",
     href: "#",
   },
   {
     id: "retail-pos",
-    title: "Retail POS System",
+    title: "Retail POS & Inventory Management",
     shortTitle: "Retail POS",
     description:
-      "A retail point-of-sale system handling sales, billing, inventory, and reporting, with secure password-protected admin controls for sensitive operations.",
-    tags: ["PHP", "jQuery", "Bootstrap", "AdminLTE", "MySQL"],
+      "A full-stack retail point-of-sale system handling sales, billing, inventory, suppliers, and reporting, with barcode-based checkout and concurrency-safe stock updates.",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "JWT"],
     highlights: [
-      "Barcode-Based Checkout Flow",
-      "Real-Time Inventory Tracking",
-      "Secure Admin Workflows",
+      "Barcode Lookup + Hold/Resume Checkout Flow",
+      "Real-Time Inventory & Concurrent Stock Updates",
+      "JWT Auth + Role-Based Admin Controls",
     ],
-    image: "https://picsum.photos/seed/retail-pos/1200/900",
-    href: "#",
-  },
-  {
-    id: "lumen-photography",
-    title: "Lumen Photography — Portfolio & Gallery",
-    shortTitle: "Lumen Photography",
-    description:
-      "A scroll-driven photography portfolio with parallax gallery reveals, a full-screen lightbox, and GSAP ScrollTrigger-powered image transitions.",
-    tags: ["Next.js", "GSAP", "ScrollTrigger", "Framer Motion", "Tailwind CSS"],
-    highlights: [
-      "Parallax Gallery With Scroll-Linked Reveals",
-      "Full-Screen Lightbox With Keyboard Navigation",
-      "Optimized Image Loading for Large Galleries",
-    ],
-    image: "https://picsum.photos/seed/lumen-photography/1200/900",
-    href: "#",
-  },
-  {
-    id: "edulearn-platform",
-    title: "EduLearn — Online Learning Platform",
-    shortTitle: "EduLearn",
-    description:
-      "A full-featured e-learning platform with course authoring, video-based lessons, quizzes, and progress tracking for students and instructors alike.",
-    tags: ["Next.js", "React 19", "TypeScript", "PostgreSQL", "Prisma", "Stripe"],
-    highlights: [
-      "Course Builder With Drag-and-Drop Lesson Ordering",
-      "Video Progress Tracking + Resume Playback",
-      "Stripe-Powered Course Enrollment & Payments",
-    ],
-    image: "https://picsum.photos/seed/edulearn-platform/1200/900",
+    image: "/images/pos.jpeg",
     href: "#",
   },
 ];
