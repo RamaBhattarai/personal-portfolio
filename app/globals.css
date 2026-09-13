@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens. JS/motion contexts that can't consume CSS variables
+ * (framer-motion color interpolation, canvas, etc.) read the same values
+ * from lib/theme.ts — keep the two in sync when a value changes here.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --surface: #141416;
+  --foreground: #f4f1ea;
+  --muted: #9a9a9e;
+
+  /* Lime — primary/professional accent: CTAs, active/selected states. */
+  --accent: #d8ff4f;
+  /* Pink — secondary/personal accent: hover reveals, playful touches only. */
+  --accent-secondary: #f4a6c6;
+
+  /* Ambient glow gradient stops, pre-mixed to ~10% opacity. */
+  --glow-secondary-from: rgba(244, 166, 198, 0.1);
+  --glow-secondary-to: rgba(201, 166, 244, 0.1);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-secondary: var(--accent-secondary);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg-glow-secondary {
+  background-image: linear-gradient(135deg, var(--glow-secondary-from), var(--glow-secondary-to));
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
 }
