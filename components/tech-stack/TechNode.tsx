@@ -5,10 +5,15 @@ import { motion, type MotionValue, type Variants } from "framer-motion";
 import type { TechNode as TechNodeData } from "./data";
 import { useNodePhysics } from "./useNodePhysics";
 
+// Sized in container-query units (cqw) rather than vw: node position (x/y)
+// is a percentage of the visualization's own box, not the viewport, so
+// size has to track that same box or nodes drift out of proportion and
+// overlap whenever the container's width-to-viewport ratio changes across
+// breakpoints (e.g. once `w-[80%]` kicks in, or max-w-4xl caps it).
 const SIZE_PX: Record<TechNodeData["size"], string> = {
-  large: "clamp(100px, 20vw, 150px)",
-  medium: "clamp(80px, 16vw, 120px)",
-  small: "clamp(60px, 12vw, 90px)",
+  large: "clamp(56px, 18cqw, 150px)",
+  medium: "clamp(46px, 15cqw, 120px)",
+  small: "clamp(36px, 11cqw, 90px)",
 };
 
 const ICON_SIZE: Record<TechNodeData["size"], string> = {
@@ -141,7 +146,7 @@ export default function TechNode({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className={`pointer-events-none absolute top-1/2 z-40 w-56 -translate-y-1/2 rounded-xl border border-accent-secondary/50 bg-accent-secondary/10 p-4 text-left shadow-xl backdrop-blur-sm ${
+            className={`pointer-events-none absolute top-1/2 z-40 w-[min(14rem,55vw)] -translate-y-1/2 rounded-xl border border-accent-secondary/50 bg-accent-secondary/10 p-4 text-left shadow-xl backdrop-blur-sm sm:w-56 ${
               labelOnLeft ? "right-full mr-4" : "left-full ml-4"
             }`}
           >

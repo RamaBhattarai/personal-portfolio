@@ -69,7 +69,7 @@ export default function TechStackSection() {
           onMouseEnter={() => cursorActive.set(1)}
           onMouseLeave={() => cursorActive.set(0)}
           onClick={() => setLockedName(null)}
-          className="relative mx-auto aspect-[4/3] w-[80%] max-w-4xl"
+          className="relative mx-auto aspect-[4/3] w-full max-w-4xl @container sm:w-[80%]"
         >
           <motion.div aria-hidden variants={atmosphereVariants} className="absolute inset-0">
             <div

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import CursorSparkles from "@/components/CursorSparkles";
@@ -191,22 +192,24 @@ export default function Hero() {
     >
       <div aria-hidden className="absolute inset-0 z-0 overflow-hidden">
         <div ref={bgRef} className="absolute -inset-8">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/images/hero.jpeg"
             alt=""
-            className="h-full w-full object-cover opacity-60"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-60"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/55" />
       </div>
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-1 overflow-hidden select-none"
+        className="pointer-events-none absolute inset-x-0 bottom-[14%] z-1 overflow-hidden select-none sm:bottom-0"
       >
         <p
           ref={bigWordRef}
-          className="font-display translate-y-[18%] whitespace-nowrap bg-gradient-to-b from-white via-white/50 to-transparent bg-clip-text pl-[6vw] text-left text-[19vw] font-extrabold leading-none text-transparent"
+          className="font-display whitespace-nowrap bg-gradient-to-b from-white via-white/50 to-transparent bg-clip-text pl-[6vw] text-left text-[19vw] font-extrabold leading-none text-transparent sm:translate-y-[18%]"
         >
           DEVELOPER
         </p>

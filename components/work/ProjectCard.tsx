@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type MouseEvent } from "react";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { FiLock } from "react-icons/fi";
 import type { Project } from "./data";
@@ -69,8 +70,13 @@ export default function ProjectCard({ project, index, isTouch, prefersReducedMot
 
   const children = (
     <>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={project.image} alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <Image
+        src={project.image}
+        alt={project.title}
+        fill
+        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        className="object-cover"
+      />
 
       {!hasLink && (
         <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full border border-white/15 bg-black/55 px-3 py-1 text-[11px] text-white/80 backdrop-blur-sm">

@@ -36,6 +36,14 @@
   background-image: linear-gradient(135deg, var(--glow-secondary-from), var(--glow-secondary-to));
 }
 
+html,
+body {
+  /* Some sections position/transform decorative elements (glow, drift,
+     scatter-entrance) past their own box; clip at the viewport instead
+     of letting them create real horizontal scroll. */
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
