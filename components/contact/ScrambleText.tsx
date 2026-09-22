@@ -27,10 +27,7 @@ export default function ScrambleText({ text, active, className }: ScrambleTextPr
   const frameRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!active) {
-      setDisplay(text);
-      return;
-    }
+    if (!active) return;
 
     const start = performance.now();
 
@@ -60,7 +57,7 @@ export default function ScrambleText({ text, active, className }: ScrambleTextPr
 
   return (
     <span aria-hidden="true" className={className}>
-      {display}
+      {active ? display : text}
     </span>
   );
 }

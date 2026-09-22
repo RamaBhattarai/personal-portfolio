@@ -39,6 +39,8 @@ export function useStarfield(): Star[] {
   const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
+    // Client-only by design: random values would mismatch SSR output.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setStars(generateStarfield());
   }, []);
 
