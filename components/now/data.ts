@@ -8,8 +8,8 @@ export interface NowContent {
 
 export const nowContent: NowContent = {
   heading: "Right Now",
-  body: "Right now, I'm deep in GSAP ScrollTrigger and WebGL shaders on the frontend, and sharpening my Node.js API design and database architecture on the backend.",
-  emphasizedTerms: ["GSAP ScrollTrigger", "WebGL shaders", "Node.js API design", "database architecture"],
+  body: "Right now, I'm deep in GSAP ScrollTrigger on the frontend, and sharpening my Node.js API design and database architecture on the backend.",
+  emphasizedTerms: ["GSAP ScrollTrigger", "Node.js API design", "database architecture"],
   lastUpdatedFallback: "July 2026",
 };
 

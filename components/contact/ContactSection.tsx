@@ -171,11 +171,6 @@ export default function ContactSection() {
           ))}
         </motion.div>
       </motion.div>
-
-      <p className="relative mt-20 text-center text-xs text-muted">
-        Built with React, TypeScript, and probably too much{" "}
-        <span className="text-accent-secondary">Framer Motion</span>. © {new Date().getFullYear()}.
-      </p>
     </section>
   );
 }

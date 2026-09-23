@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "Concurrency-Safe Appointment Scheduling",
     ],
     image: "/images/realestate.jpeg",
-    href: "#",
+    href: "https://bsrealtyllc.com/",
   },
   {
     id: "bs-realty-insurance",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Real-Time Notifications + Live Mapping (Leaflet)",
     ],
     image: "/images/insurance.jpeg",
-    href: "#",
+    href: "https://insurance.bsrealtyllc.com/",
   },
   {
     id: "retail-pos",

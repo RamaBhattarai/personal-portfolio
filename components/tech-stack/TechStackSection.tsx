@@ -47,7 +47,7 @@ export default function TechStackSection() {
   const activeName = lockedName ?? hoveredName;
 
   return (
-    <section className="py-12 sm:py-16">
+    <section id="tech-stack" className="py-12 sm:py-16">
       <div className="mx-auto flex flex-col items-center px-6 text-center sm:px-12">
         <h2 className="font-display text-3xl font-bold sm:text-5xl">What&apos;s In My Stack</h2>
         <p className="mt-4 max-w-[520px] text-base text-muted sm:text-lg">

@@ -11,7 +11,7 @@ export default function NowSection() {
   const caption = useLatestCommit(GITHUB_USERNAME, nowContent.lastUpdatedFallback);
 
   return (
-    <section className="relative overflow-hidden px-6 py-14 sm:px-12 sm:py-16">
+    <section id="now" className="relative overflow-hidden px-6 py-14 sm:px-12 sm:py-16">
       <motion.div
         aria-hidden
         className="pointer-events-none absolute inset-0"

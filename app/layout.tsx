@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const display = Bricolage_Grotesque({
@@ -96,6 +97,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
         {children}
+        <Footer />
       </body>
     </html>
   );

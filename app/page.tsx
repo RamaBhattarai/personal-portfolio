@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import SelectedWorkSection from "@/components/work/SelectedWorkSection";
+import ExperienceSection from "@/components/experience/ExperienceSection";
 import ProcessSection from "@/components/ProcessSection";
 import TechStackSection from "@/components/tech-stack/TechStackSection";
 import NowSection from "@/components/now/NowSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <SelectedWorkSection />
+      <ExperienceSection />
       <ProcessSection />
       <TechStackSection />
       <NowSection />

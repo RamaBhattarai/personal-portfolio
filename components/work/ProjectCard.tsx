@@ -140,7 +140,9 @@ export default function ProjectCard({ project, index, isTouch, prefersReducedMot
     return (
       <motion.a
         href={project.href}
-        aria-label={`View case study: ${project.title}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Visit live site: ${project.title}`}
         onClick={handleLinkClick}
         {...sharedProps}
       >
